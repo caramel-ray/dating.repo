@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  header {
+    height: 100vh;
+    /* background-color: #31b8a636; */
+    background-image: linear-gradient(220deg, #ff6da0, #65adee),
+      url("./images/fausto-sandoval-2uMWQE27Mug-unsplash.jpg");
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    position: relative;
+    color: #0d80e498;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: -2px;
+  }
+  
+  .logo span {
+    font-size: 40px;
+    color: #ff6da0;
+    margin-left: -5px;
+  }
+  
+#btn {
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff6da0;
+}
+
+  .intro {
+    margin: auto 0px;
+  }
+  
+  .intro form span svg {
+    width: 24px;
+  }
+  
+  .intro > h1 {
+    font-size: 45px;
+  }
+  
+  .intro > h1 span {
+    font-style: italic;
+    /* font-family: "Times New Roman", Times, serif; */
+  }
+  
+  .intro form {
+    background-color: #fff;
+    color: #777;
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0px;
+  }
+  
+  .intro form input {
+    flex: 1;
+    padding: 15px 0px;
+    border: none;
+     outline: none;
+    color: #777;
+  }
+  
+  .intro form span {
+    align-self: center;
+    padding: 5px 12px 0px;
+  }
+  
+  .intro form button {
+    width: 100px;
+    background-color: mediumseagreen;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+  }
+  
+  .intro > p a {
+    border-radius: 50px;
+    padding: 4px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+    font-size: 14px;
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  /* styles for site Navigation */
+  
+  nav {
+    position: sticky;
+    transition: 0.5s;
+    top: 0;
+    background-color: #fff;
+  }
+  
+  nav .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+  }
+  
+  nav .top .logo {
+    color: #000;
+  }
+  
+  nav .top form {
+    background-color: #fff;
+    display: flex;
+    border: 1px solid #bbb;
+    align-items: center;
+    color: #777;
+    border-radius: 3px;
+    flex: 0.6;
+    margin-left: 40px;
+  }
+  
+  nav .top form input {
+    border: none;
+    outline: none;
+    padding: 7px;
+    flex: 1;
+  }
+  
+  nav .top form span {
+    margin: 0px 8px;
+  }
+  
+  nav .top form span svg {
+    width: 18px;
+    margin-top: 5px;
+  }
+  
+  nav .top form button {
+    align-self: stretch;
+    width: 80px;
+    background-color: mediumseagreen;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px mediumseagreen;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  nav .top ul {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  nav .top ul li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  nav .top ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #777;
+    transition: .5s;
+  }
+  
+  nav .top ul li a:hover {
+    color: mediumseagreen;
+  }
+  
+  nav .top #cta {
+    padding: 8px 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #ff6da0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ff6da0;
+    outline: none;
+    transition: .5s;
+  }
+  
+  nav .top #cta:hover {
+    background-color: mediumseagreen;
+    color: #fff;
+  }
+  nav .bottom {
+    border: 1px solid #bbb;
+    border-left: none;
+    border-right: none;
+    padding: 0px 4%;
+  }
+  
+  nav .bottom ul {
+    display: flex;
+  }
+  
+  
+  nav .bottom ul li {
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+  }
+  
+  nav .bottom ul li:hover {
+    border-bottom: 2px solid mediumseagreen;
+  }
+  
+  nav .bottom ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #777;
+  }
+  
+  nav .bottom ul li a span {
+    border: 1px solid crimson;
+    color: crimson;
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  #pro-services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 4%;
+  }
+  
+  .services-container {
+    height: 345px;
+    position: relative;
+    margin: 20px 0px;
+  }
+  
+  .services {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .service-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .service-item .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff0;
+    padding: 20px;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .service-item .details:hover {
+    background-color: #fff3;
+  }
+  
+  .service-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .services-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    font-size: 20px; 
+    box-shadow: 0 0 10px #0005;
+  }
+  
+  .services-container button#prev {
+    left: calc(-45px / 2);
+  }
+  
+  .services-container button#next {
+    right: calc(-45px / 2);
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .intro > h1 {
+      font-size: 30px;
+    }
+  
+    .intro > p {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .intro p > a {
+      margin: 5px;
+    }
+  }
+  
